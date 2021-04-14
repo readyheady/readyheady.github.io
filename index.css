@@ -33,6 +33,9 @@ html {
   font-size: 72px;
   font-family: sans-serif;
 }
+.container .box:hover {
+  background: #ffe1b9;
+}
 
 .readyheady {
   box-sizing: border-box;
