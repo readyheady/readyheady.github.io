@@ -30,3 +30,15 @@ html {
   font-size: 40px;
   font-family: sans-serif;
 }
+
+.name {
+  margin: 1em 0 0.5em 0;
+  color: #343434;
+  font-weight: normal;
+  font-family: 'Ultra', sans-serif;   
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+  }
