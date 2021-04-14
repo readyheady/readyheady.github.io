@@ -10,11 +10,11 @@ html {
 
 .container {
   margin: 30px auto;
-  width: 400px;
+  width: 800px;
   height: 400px;
   background-color: #e7cfff;
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: 800px;
   grid-row: auto;
   grid-column-gap: 60px;
   grid-row-gap: 20px;
@@ -47,7 +47,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 18px;
   font-family: sans-serif;
 }
 .container .box1:hover {
