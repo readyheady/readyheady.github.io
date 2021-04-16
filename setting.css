@@ -179,9 +179,3 @@ body.dark {
   text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
-  
-  .floating-btn {
-    right: 10px;
-  }
-}
