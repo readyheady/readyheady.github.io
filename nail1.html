@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ready Heady: Timers</title>
+  <link rel="stylesheet" href="nail1.css">
+    <script src="nail1.js"></script>
+</head>
+<body>
+<p class="readyheady"> Timers </p>
+<div class="container">
+  <div class="box"><p id="demo">Time remaining: </p></div>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+  <a href="index.html" target="_self"><div class="box"> <i class="arrow left"></i> return</div></a>
+</div>
+<!-- Display the countdown timer in an element -->
+
+
+</body>
+</html>

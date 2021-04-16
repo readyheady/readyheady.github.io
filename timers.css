@@ -32,6 +32,7 @@ html {
   justify-content: center;
   font-size: 72px;
   font-family: sans-serif;
+  text-decoration: none; 
 }
 .container .box:hover {
   background: #ffe1b9;
@@ -60,4 +61,28 @@ html {
 .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+  /* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #b56aff; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none; 
+}
+
+.navbar a.right {
+  float: right; 
+}
+
+.navbar a:hover {
+  background-color: #ddd; 
+  color: black; 
 }
