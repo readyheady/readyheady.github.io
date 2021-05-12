@@ -1,0 +1,123 @@
+body {
+    background-color: #e7cfff96;
+}
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav {
+    background: linear-gradient(180deg, #b56aff 0%, #9d63d6)  !important;
+    border-bottom: solid 1px #8c34ca;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.bootstrap-select .btn:focus {
+    outline: none !important;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-purple {
+    color: #b56aff;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.main-app {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: .25rem!important;
+    padding: 10px;
+    display: -webkit-inline-box;
+    width: 900px;
+    height: 500px;
+    max-width: 900px;
+    max-height: 500px;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.row {
+    display: contents !important;
+}
+
+.col-h-100 {
+    height: 100%;
+    width: 100%;
+}
+
+.margin-15px-vertical {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: 0.45;
+}
+
+.btn-success {
+    background: linear-gradient(180deg, #b56aff 0%, #9d63d6)  !important;
+    border: none;
+}
+
+.btn-danger {
+    background: linear-gradient(180deg, #dc3545 0%, #bb2735) !important;
+    border: none;
+}
+
+.image {
+    height: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, #b56aff 0%, #ffffff) !important;
+    text-align: center;
+}
+
+.image img {
+    margin-top: 30px;
+    height: 210px;
+    width: 200px;
+}
+
+.weight-900 {
+    font-weight: 900;
+}
+
+.time {
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+.time p.text-purple {
+    margin-bottom: 0px;
+}

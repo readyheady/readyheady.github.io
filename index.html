@@ -1,24 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Ready Heady</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
-</head>
-<body>
-	<div class="navbar">
-  <a href="timers.html" target="_self"><div class="box">timers</div></a>
-  <a href="faq.html" target="_self"><div class="box">faq</div></a>
-  <a href="setting.html" target="_self"><div class="box">setting</div></a>
-  <a href="how.html" target="_self"><div class="box">how2</div></a>
-  <a href="index.html" target="_self" class="right">home</a>
-</div>
-	<p class="readyheady"> ready-heady </p>
-<div class="container">
-  <a href="timers.html" target="_self"><div class="box">timers</div></a>
-  <a href="faq.html" target="_self"><div class="box">faq</div></a>
-  <a href="setting.html" target="_self"><div class="box">setting</div></a>
-  <a href="how.html" target="_self"><div class="box">how2</div></a>
-</div>
-</body>
+   <header>
+      <title>ReadyHeady</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="./styles.css" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+      <script src="./app.js"></script>
+   </header>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container-fluid">
+            <a class="navbar-brand text-white" href="./index.html">readyheady</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#">Settings</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container align-center">
+         <div class="main-app">
+            <div class="row">
+               <div class="col-6 col-h-100 margin-15px-vertical">
+                  <div class="image" id="img">
+                  </div>
+                  <div class="time text-center">
+                     <p id="stepText" class="text-gray">Step <span id="step">0</span> of 3</p>
+                     <p id="message" class="text-purple weight-900"></p>
+                     <h3 id="timeRemaining" class="text-purple weight-900"></h3>
+                  </div>
+               </div>
+               <div class="col-6 col-h-100 margin-15px-vertical">
+                  <form>
+                     <div class="form-group">
+                        <label>Mode</label>
+                        <select id="mode" class="form-control">
+                           <option value="0">Beginner</option>
+                           <option value="1">Intermediate</option>
+                           <option value="2">Advanced</option>
+                           <option value="3">Custom</option>
+                        </select>
+                     </div>
+                     <div class="form-group">
+                        <label>Heatup Time (seconds)</label>
+                        <input id="heatupTime" type="number" min="0" class="form-control" placeholder="Example: 30, 60" disabled>
+                     </div>
+                     <div class="form-group">
+                        <label>Cooldown Time (seconds)</label>
+                        <input id="cooldownTime" type="number" min="0" class="form-control" placeholder="Example: 30, 60" disabled>
+                     </div>
+                     <div class="form-group">
+                        <label>Action Time (seconds)</label>
+                        <input id="actionTime" type="number" min="0" class="form-control" placeholder="Example: 30, 60" disabled>
+                     </div>
+                  </form>
+                  <button type="button" id="startTimer" class="btn btn-success">Start Timer</button>
+                  <button type="button" id="stopTimer" class="btn btn-danger" disabled>Stop Timer</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
