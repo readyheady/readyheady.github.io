@@ -12,24 +12,24 @@ let settings = {
 // Predefined Timers
 let predefinedTimers = [
     {
-        name: 'Beginner',
-        heatupTime: 15,
-        cooldownTime: 15,
-        actionTime: 15
-
-    },
-    {
-        name: 'Intermediate',
-        heatupTime: 30,
-        cooldownTime: 30,
-        actionTime: 30
-
-    },
-    {
-        name: 'Advanced',
-        heatupTime: 45,
-        cooldownTime: 45,
+        name: 'Standard 30mm',
+        heatupTime: 40,
+        cooldownTime: 60,
         actionTime: 45
+
+    },
+    {
+        name: 'Wide 35mm',
+        heatupTime: 45,
+        cooldownTime: 70,
+        actionTime: 50
+
+    },
+    {
+        name: 'Slim 25mm',
+        heatupTime: 35,
+        cooldownTime: 50,
+        actionTime: 40
     }
 ]
 
@@ -55,9 +55,9 @@ class Timer {
                 let coolDownTime = this.coolDownTime;
                 let actionTime = this.actionTime;
 
-                this.setupTimer('Heat up!', heatupTime, 1).then(() =>
-                this.setupTimer('Cool Down', coolDownTime, 2)).then(() =>
-                this.setupTimer('Get to Action!', actionTime, 3)).then(() => stop())
+                this.setupTimer('Heat up! hold torch perpendicular to center', heatupTime, 1).then(() =>
+                this.setupTimer('Cooling down, please wait.', coolDownTime, 2)).then(() =>
+                this.setupTimer('!!!', actionTime, 3)).then(() => stop())
                 .catch(err => {
                     if (err) console.error(err)
                 });
